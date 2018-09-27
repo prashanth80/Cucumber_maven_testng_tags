@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BDD Test Suite" parallel="tests" thread-count="5">
+    <test name="Login Test" parallel="classes" thread-count="5">
+        <classes>
+            <class name="cucumber.runners.GenericRunner"/>
+        </classes>
+    </test>
+
+    <test name="Tag Test" parallel="classes" thread-count="5">
+        <classes>
+            <class name="cucumber.runners.CustomAbstractTestNGCucumberTests"/>
+        </classes>
+    </test>
+</suite>
