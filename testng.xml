@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="BDD Test Suite" parallel="tests" thread-count="5">
-    <test name="Tag Test" parallel="classes" thread-count="5">
+<suite name="BDD Test Suite" parallel="tests">
+    <test name="Tag Test" parallel="classes">
         <method-selectors>
             <method-selector>
                 <script language="beanshell"><![CDATA[ System.setProperty("TagName","@SingIn");return true;]]></script>
